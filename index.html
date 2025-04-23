@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masażysta Jan Kowalski</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1588776814546-b1c1b4f250b7?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            background: rgba(0,0,0,0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        nav {
+            background: #2e8b57;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #246b47;
+        }
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .gallery, .opinie {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img, .opinie blockquote {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .opinie blockquote {
+            background: #f3f3f3;
+            padding: 20px;
+            border-left: 5px solid #2e8b57;
+        }
+        .service {
+            background: #f9f9f9;
+            border-left: 4px solid #2e8b57;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #2e8b57;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 24px; }
+            nav a { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Masażysta Jan Kowalski</h1>
+</header>
+
+<nav>
+    <a href="#o-mnie">O mnie</a>
+    <a href="#uslugi">Usługi</a>
+    <a href="#korzysci">Korzyści</a>
+    <a href="#opinie">Opinie</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="o-mnie">
+    <h2>O mnie</h2>
+    <p>Nazywam się Jan Kowalski i jestem certyfikowanym masażystą z ponad 10-letnim doświadczeniem. Ukończyłem Akademię Fizjoterapii w Krakowie oraz liczne kursy specjalistyczne z zakresu masażu leczniczego, drenażu limfatycznego i terapii manualnej.</p>
+    <p>Pracuję z osobami cierpiącymi na bóle pleców, sportowcami, a także klientami szukającymi chwili relaksu. Stawiam na indywidualne podejście i wysoką jakość usług.</p>
+</section>
+
+<section id="uslugi">
+    <h2>Usługi</h2>
+    <div class="service">
+        <h3>Masaż klasyczny</h3>
+        <p>Poprawia krążenie, rozluźnia mięśnie i wspomaga regenerację. Idealny dla każdego.</p>
+    </div>
+    <div class="service">
+        <h3>Masaż relaksacyjny</h3>
+        <p>Delikatny masaż przy dźwiękach muzyki i zapachu olejków eterycznych. Redukuje stres i napięcie.</p>
+    </div>
+    <div class="service">
+        <h3>Drenaż limfatyczny</h3>
+        <p>Skuteczny sposób na obrzęki i poprawę przepływu limfy. Rekomendowany po operacjach i przy problemach z krążeniem.</p>
+    </div>
+    <div class="service">
+        <h3>Masaż sportowy</h3>
+        <p>Przygotowanie i regeneracja dla osób aktywnych. Dostosowany do dyscypliny sportowej.</p>
+    </div>
+</section>
+
+<section id="korzysci">
+    <h2>Korzyści z masażu</h2>
+    <ul>
+        <li>Lepsze samopoczucie i redukcja stresu</li>
+        <li>Poprawa postawy i elastyczności mięśni</li>
+        <li>Ukojenie bólu i napięcia</li>
+        <li>Wsparcie dla układu odpornościowego i nerwowego</li>
+    </ul>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089937c3?auto=format&fit=crop&w=800&q=80" alt="Gabinet">
+        <img src="https://images.unsplash.com/photo-1604085572509-62b06c71c07f?auto=format&fit=crop&w=800&q=80" alt="Masaż w trakcie">
+    </div>
+</section>
+
+<section id="opinie">
+    <h2>Opinie klientów</h2>
+    <div class="opinie">
+        <blockquote>
+            „Świetny profesjonalista, po masażu plecy przestały mnie boleć. Czułam się zaopiekowana od początku do końca.”
+            <br><strong>– Anna, Kraków</strong>
+        </blockquote>
+        <blockquote>
+            „Najlepszy masaż sportowy, jaki miałem! Wrócę na pewno po zawodach.”
+            <br><strong>– Michał, biegacz</strong>
+        </blockquote>
+    </div>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <p><strong>Adres gabinetu:</strong> ul. Zdrowia 12, 30-001 Kraków<br>
+    <strong>Telefon:</strong> 123 456 789<br>
+    <strong>E-mail:</strong> kontakt@masazjan.pl</p>
+
+    <form>
+        <input type="text" placeholder="Imię i nazwisko" required>
+        <input type="email" placeholder="Adres e-mail" required>
+        <textarea placeholder="Twoja wiadomość" rows="5" required></textarea>
+        <button type="submit">Wyślij wiadomość</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Jan Kowalski – Masażysta. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>
